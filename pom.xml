@@ -34,13 +34,26 @@
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${plugin.maven-surefire}</version>
                 <configuration>
                     <skipTests>${skipTests}</skipTests>
+                </configuration>
+            </plugin>
+			<plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <url>http://localhost:8080/manager/text</url>
+                    <server>tomcat7</server>
+                    <path>/${project.artifactId}</path>
+                    <charset>utf8</charset>
+                    <update>true</update>
+					<username>tomcat</username>
+					<password>tomcat</password>
                 </configuration>
             </plugin>
         </plugins>
