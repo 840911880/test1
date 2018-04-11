@@ -34,6 +34,10 @@
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 58948af03ea5b684411e169eb2d7d73241420e9d
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -42,6 +46,7 @@
                     <skipTests>${skipTests}</skipTests>
                 </configuration>
             </plugin>
+<<<<<<< HEAD
 			<plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
@@ -56,6 +61,8 @@
 					<password>tomcat</password>
                 </configuration>
             </plugin>
+=======
+>>>>>>> 58948af03ea5b684411e169eb2d7d73241420e9d
         </plugins>
 
         <!--配置Maven 对resource文件 过滤 -->
